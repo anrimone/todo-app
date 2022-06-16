@@ -5,18 +5,18 @@
       <input
         type="text"
         v-model="task"
-        placeholder="Enter task"
+        placeholder="Введите задачу"
         class="w-100 form-control"
       />
       <button class="btn btn-warning rounded-0" @click="submitTask">
-        SUBMIT
+        Отправить
       </button>
     </div>
     <table class="table table-bordered mt-5">
       <thead>
         <tr>
-          <th scope="col">Task</th>
-          <th scope="col" style="width: 120px">Status</th>
+          <th scope="col">Задачи</th>
+          <th scope="col" style="width: 120px">Статус</th>
           <th scope="col" class="text-center">#</th>
           <th scope="col" class="text-center">#</th>
         </tr>
@@ -72,15 +72,15 @@ export default {
 
       tasks: [
         {
-          name: "Steal bananas from the supermarket.",
+          name: "Опозориться.",
           status: "to-do",
         },
         {
-          name: "Eat 1 kg chocolate in 1 hour.",
+          name: "Процесс позора.",
           status: "in-progress",
         },
         {
-          name: "Create YouTube video.",
+          name: "Опозорились.",
           status: "finished",
         },
       ],
@@ -131,6 +131,9 @@ export default {
 </script>
 
 <style scoped>
+.btn-warning {
+    margin-left: 20px;
+}
 .pointer {
   cursor: pointer;
 }
